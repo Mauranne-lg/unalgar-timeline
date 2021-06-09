@@ -1,0 +1,139 @@
+.scroller {
+  display: flex;
+  list-style: none;
+  margin-top: 30px;
+  overflow-x: auto;
+  background-color: rgb(211, 181, 125);
+  min-height: 350px;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.cardBlock {
+  margin: 0 auto;
+  display: flex;
+}
+
+.timelineCard {
+  background: #b0bec5;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  height: 300px;
+  width: 200px;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  opacity: 1 !important;
+}
+
+.encart {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  word-break: break-word;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  opacity: 1;
+}
+
+.encart p {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.timelineDiv {
+  display: flex;
+  align-items: center;
+}
+
+.emptySpace {
+  background: black;
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  margin: 10px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.emptySpace:hover {
+  border: 3px orange solid;
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+  }
+  50% {
+    transform: scale(1);
+    box-shadow: 0px 0px 5px 8px darkolivegreen;
+  }
+  100% {
+  }
+}
+
+.validation {
+  text-align: center;
+}
+
+.message {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 20%;
+  background-color: transparent;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+span {
+  font-size: 30px;
+  color: white;
+  font-family: "Russo One", sans-serif;
+}
+
+@media (orientation: landscape) and (max-width: 640px) {
+  .scroller {
+    width: 100%;
+    font-size: 20px;
+    min-height: 120px;
+    margin-top: 0px;
+  }
+  h1 {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .timelineCard {
+    height: 95px;
+    width: 75px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .encart {
+    font-size: 5px;
+    background-color: grey;
+  }
+  .emptySpace {
+    height: 5px;
+    width: 5px;
+  }
+}

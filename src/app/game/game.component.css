@@ -1,0 +1,80 @@
+#jeux {
+  background-image: url(/assets/img/gameJeux.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
+  background-attachment: fixed;
+}
+
+.bottom-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 140px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  border: transparent;
+  font-size: 25px;
+  padding: 10px;
+  background: transparent;
+  font-family: "Russo One", sans-serif;
+}
+
+button:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+button > img {
+  height: 40px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+span {
+  font-size: 30px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  font-family: "Russo One", sans-serif;
+}
+
+.backHome {
+  width: 50px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+@media (orientation: landscape) and (max-width: 640px) {
+  #jeux {
+    width: 100%;
+  }
+  .bottom-menu {
+    margin-top: 20px;
+  }
+
+  .backHome {
+    width: 30px;
+    margin-top: -20px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  span {
+    font-size: 15px;
+  }
+}

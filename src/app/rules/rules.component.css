@@ -1,0 +1,67 @@
+#rules {
+  background-image: url(../../assets/img/unalgarRegle.jpg);
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-size: 30px;
+  background-color: rgb(62, 48, 45, 0.9);
+  color: beige;
+}
+
+.row {
+  padding: 30px;
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Russo One", sans-serif;
+  padding: 0px;
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+.rightArrow {
+  height: 30px;
+  width: 40px;
+}
+
+.tailleRegle {
+  width: 50%;
+  height: 300px;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: transparent;
+  width: 25px;
+  padding: 10px;
+  background: transparent;
+  font-family: "Russo One", sans-serif;
+}
+
+.leftArrow {
+  width: 50px;
+}
+
+button:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+img {
+  height: 50px;
+  width: 90px;
+}
